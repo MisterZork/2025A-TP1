@@ -1,23 +1,16 @@
 # Exercice 02 – Taux d’occupation d’un bus (gabarit)
-"""
-Objectif :
-- DEMANDER un taux (int), 0..100 inclus.
-- Si invalide : afficher "Taux d'occupation invalide."
-- Sinon : afficher barre de 10 caractères (❚ pour ~10%), arrondi à la dizaine la plus proche,
-         puis afficher "{taux}%"
+# Fait par - Hamza Gharbi
 
-Prompt EXACT à utiliser quand vous implémenterez input :
-"Entrez le taux d'occupation d'un bus (en %): "
-"""
+# Étape 1 - Demander à l'utilisateur le taux d'occupation et vérifier sa validité
 
-# TODO: Lire le taux (int) via input avec le prompt EXACT
+taux = int(input("Entrez le taux d'occupation d'un bus (en %): "))
+if taux < 0 or taux > 100:
+    print("Taux d'occupation invalide.")
+    quit()
 
+# Étape 2 - Calculer les valeurs des blocs qui vont s'afficher dans la barre.
+blocs = (taux + 5) // 10
 
-# TODO: Valider 0 <= taux <= 100
-
-
-# TODO: Calculer blocs = (taux + 5) // 10  (arrondi à la dizaine)
-
-
-# TODO: Afficher barre et pourcentage dans le format correct.
-
+# Étape 3 - Affichage final du programme
+print("[" + "❚" * blocs + " " * (10 - blocs) + "]")
+print(f"{taux}%")

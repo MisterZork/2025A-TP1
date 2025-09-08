@@ -1,27 +1,15 @@
 # Exercice 01 – Usage hebdomadaire du métro (gabarit)
-"""
-Objectif :
-- DEMANDER le nom complet et le nombre de déplacements par semaine (entier)
-- Calculer le nombre de déplacements annuels
-- Afficher EXACTEMENT :
-    Bonjour {nom}
-    Vous effectuez environ {nombre de déplacements annuels} déplacements par an sur le réseau STM.
+# Fait par - Hamza Gharbi
 
-Prompts (à utiliser quand vous implémenterez input) :
-1) "Veuillez entrer votre nom complet : "
-2) "Veuillez entrer le nombre de déplacements par semaine : "
-"""
+# Étape 1 - Demander à l'utilisateur les informations d'entrée (nom et déplacements hebdomadaires)
+nom = str(input("Veuillez entrer votre nom complet : "))
+nb_mouvement = int(input("Veuillez entrer le nombre de déplacements par semaine : "))
 
+# Étape 2 - Faire le calcul des déplacements annuels
+mouvement_annuels = nb_mouvement * 52 # Considérant qu'il y a 52 semaines en 1 année
 
-# TODO: Lire le nom complet (str) avec le prompt EXACT
+# Étape 3 - Afficher la réponse de sortie
+print(f"Bonjour {nom}")
+print(f"Vous effectuez environ {mouvement_annuels} déplacements par an sur le réseau STM.")
 
-
-# TODO: Lire le nombre de déplacements par semaine (int) avec le prompt EXACT
-
-
-# TODO: Calcul des déplacements annuels
-
-
-# TODO: Affichage des deux lignes EXACTES
-
-
+# TODO : Demander au prof si on doit vérifier le nb_mouvement en nombre ENTIER
