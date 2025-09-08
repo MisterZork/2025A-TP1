@@ -1,25 +1,18 @@
 # Exercice 04 – Hauteur atteinte par un escalier mécanique (gabarit)
-"""
-Objectif :
-- DEMANDER longueur (m, float) et angle (° en degrés, float)
-- Valider : longueur >= 0 et 0 <= angle <= 90
-    -> sinon afficher "Erreur - données invalides."
-- Sinon : H = L * sin(radians(angle)) ; afficher avec 2 décimales : "{H:.2f} m"
+# Fait par - Hamza Gharbi
 
-Prompts EXACTS à utiliser quand vous implémenterez input :
-1) "Entrez la longueur de l'escalier (en mètres) : "
-2) "Entrez l'angle de l'escalier par rapport à l'horizontale (en degrés) : "
-"""
+from math import sin, radians
 
-# TODO: Importer la/les bibliothèques nécessaire(s)
+# Étape 1 - Lire longueur et angle via input (prompts EXACTS) et convertir en float
+longueur = float(input("Entrez la longueur de l'escalier (en mètres) : "))
+angle = float(input("Entrez l'angle de l'escalier par rapport à l'horizontale (en degrés) : "))
 
+# Étape 2 - Validation des entrées
+if longueur < 0 or angle < 0 or angle > 90:
+    print("Erreur - données invalides.")
+    quit()
 
-# TODO: Lire longueur et angle via input (prompts EXACTS) et convertir en float
-
-
-# TODO: Validation des entrées
-
-
-# TODO: Calcul hauteur et affichage
-
+# Étape 3 - Calcul hauteur et affichage
+hauteur = longueur * sin(radians(angle))
+print(f"{hauteur:.2f} m")
 

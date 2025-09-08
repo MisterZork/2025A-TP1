@@ -2,7 +2,7 @@ import os, re, subprocess, sys
 
 # ---- Réglages ----
 IGNORE_PROMPTS = True
-REQUIRE_BONUS_EXO5 = False   # passe à True si tu veux rendre la ligne bonus obligatoire
+REQUIRE_BONUS_EXO5 = True   # passe à True si tu veux rendre la ligne bonus obligatoire
 
 PROMPT_RE = re.compile(
     r"(?:^|\n)\s*(?:Veuillez entrer|Entrez|Entrez l'|Entrez la|Entrez le)[^\n]*:\s*",
