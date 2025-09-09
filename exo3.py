@@ -1,5 +1,5 @@
 # Exercice 03 – Marcher ou attendre le bus ? (gabarit)
-# Fait par - Hamza Gharbi
+# Fait par - Hamza Gharbi et Yanis Ben Boudaoud
 
 # Étape 1 - Lire distance et attente via input
 dist = float(input("Entrez la distance jusqu'à la destination (en kilomètres) : "))
@@ -16,5 +16,3 @@ elif temps_marche > temps_bus:
     print("Il est plus rapide de prendre le bus.")
 else:
     print("Les deux options prennent le même temps.")
-
-# TODO : Demander au prof si on peux vérifier que les valeurs soient positives.

@@ -2,7 +2,7 @@
 
 📅 **Date de remise : 21 Septembre à 23:59**
 
-Bienvenue dans cette série de cinq exercices Python pour votre TP1! Vous trouverez ci-dessous la description de chaque exercice. 
+Bienvenue dans cette série de cinq exercices Python pour votre TP1! Vous trouverez ci-dessous la description de chaque exercice.
 
 ⚠️ Assurez-vous de respecter exactement les formats d’entrée et de sortie demandés (y compris l’orthographe, la ponctuation et les espaces), car un script de tests automatisés va aider à valider vos solutions.
 
@@ -10,12 +10,13 @@ Bienvenue dans cette série de cinq exercices Python pour votre TP1! Vous trouve
 
 ⚠️ L'utilisation de tout outil basé sur l'Intelligence Artificielle est interdite!
 
-## Exercices:
+## Exercices
 
 Le réseau de transport de montréal (STM), tout comme d'habitude, cherche à améliorer son réseau et demande votre aide pour accomplir cette tâche.  Ces exercices vous permettront de pratiquer les bases de la programmation Python : **entrées/sorties, opérations mathématiques simples, conditions et formatage de texte**.
 
 ## 01. Usage hebdomadaire du métro
-Écrivez un programme qui salue l’utilisateur et estime sa fréquence annuelle de déplacements en transport en commun. Le programme devra demander le nom complet de l’utilisateur, puis le nombre de déplacements qu’il effectue en moyenne chaque semaine sur le réseau de la STM. Il affichera ensuite un message de bienvenue personnalisé suivi d’une estimation du nombre de déplacements annuels correspondants (en supposant 52 semaines dans l’année). 
+
+Écrivez un programme qui salue l’utilisateur et estime sa fréquence annuelle de déplacements en transport en commun. Le programme devra demander le nom complet de l’utilisateur, puis le nombre de déplacements qu’il effectue en moyenne chaque semaine sur le réseau de la STM. Il affichera ensuite un message de bienvenue personnalisé suivi d’une estimation du nombre de déplacements annuels correspondants (en supposant 52 semaines dans l’année).
 
 Exemple :
 
@@ -27,20 +28,21 @@ Veuillez entrer le nombre de déplacements par semaine :
 ```
 
 Sorties (programme) :
+
 ```python
 Bonjour Jean Dupont
 Vous effectuez environ 520 déplacements par an sur le réseau STM.
 ```
- 
+
 Explication : Dans cet exemple, l’utilisateur a indiqué effectuer 10 trajets par semaine. Le programme calcule alors 10 × 52 = 520 déplacements par an et affiche le message avec cette valeur.
 
-NB : Vous devez convertir le nombre de déplacements par semaine en entier avant de faire vos opérations. 
+NB : Vous devez convertir le nombre de déplacements par semaine en entier avant de faire vos opérations.
 
 ## 02. Taux d’occupation d’un bus
 
-Dans cet exercice, vous écrivez un programme de surveillance du taux d’occupation d’un bus de la STM. 
+Dans cet exercice, vous écrivez un programme de surveillance du taux d’occupation d’un bus de la STM.
 
-Le programme demande à l’utilisateur le **pourcentage** de remplissage actuel du bus (une valeur de 0 à 100). S’il s’agit d’une valeur valide (dans l’intervalle [0, 100]), le programme affiche une barre de progression visuelle du taux d’occupation ainsi que le pourcentage saisi. La barre de progression est composée de 10 caractères, où chaque bloc ❚ représente 10% d’occupation. Le nombre de blocs affichés doit refléter le pourcentage le plus proche (arrondi à la dizaine près). Les positions non occupées de la barre seront laissées vides (espaces). En cas de pourcentage invalide (nombre négatif ou supérieur à 100), le programme affiche un message d’erreur approprié. 
+Le programme demande à l’utilisateur le **pourcentage** de remplissage actuel du bus (une valeur de 0 à 100). S’il s’agit d’une valeur valide (dans l’intervalle [0, 100]), le programme affiche une barre de progression visuelle du taux d’occupation ainsi que le pourcentage saisi. La barre de progression est composée de 10 caractères, où chaque bloc ❚ représente 10% d’occupation. Le nombre de blocs affichés doit refléter le pourcentage le plus proche (arrondi à la dizaine près). Les positions non occupées de la barre seront laissées vides (espaces). En cas de pourcentage invalide (nombre négatif ou supérieur à 100), le programme affiche un message d’erreur approprié.
 
 Exemples :
 
@@ -57,32 +59,40 @@ Sorties (programme) :
 0%
 ```
 
-Entrée (utilisateur) : 
+Entrée (utilisateur) :
+
 ```python
 Entrez le taux d'occupation d'un bus (en %): 12
 ```
+
 Sorties :
+
 ```python
 [❚         ]  
 12%  
 ```
 
-Entrée (utilisateur) : 
+Entrée (utilisateur) :
+
 ```python
 Entrez le taux d'occupation d'un bus (en %): 68
 ```
 
 Sorties :
+
 ```python
 [❚❚❚❚❚❚❚   ]  
 68%
 ```
 
-Entrée (utilisateur) : 
+Entrée (utilisateur) :
+
 ```python
 Entrez le taux d'occupation d'un bus (en %): 304
 ```
+
 Sortie :
+
 ```python
 Taux d'occupation invalide.  
 ```
@@ -112,7 +122,8 @@ Pour une distance de 5 km sans aucune attente de bus, marcher prend ~60 min co
 Pour une distance de 1 km avec 9 minutes d’attente, marcher et prendre le bus prennent chacun ~12 minutes : le programme affichera « Les deux options prennent le même temps. ».
 
 ## 04. Hauteur atteinte par un escalier mécanique
-Les stations de métro de Montréal sont équipées d’escaliers mécaniques pour faciliter l’accès. Dans cet exercice, vous devez calculer la hauteur verticale atteinte par un escalier mécanique en fonction de sa longueur et de son inclinaison. Le programme demande à l’utilisateur la longueur de l’escalier (en mètres) et l’angle de l’escalier par rapport à l’horizontale (en degrés). Il calcule ensuite la hauteur verticale correspondante en utilisant la formule : 
+
+Les stations de métro de Montréal sont équipées d’escaliers mécaniques pour faciliter l’accès. Dans cet exercice, vous devez calculer la hauteur verticale atteinte par un escalier mécanique en fonction de sa longueur et de son inclinaison. Le programme demande à l’utilisateur la longueur de l’escalier (en mètres) et l’angle de l’escalier par rapport à l’horizontale (en degrés). Il calcule ensuite la hauteur verticale correspondante en utilisant la formule :
 
 $$
 𝐻 = 𝐿 × sin(𝜃)
@@ -144,6 +155,7 @@ La STM vend des titres de transport (valables par utilisation) :
 > Votre programme doit calculer la **combinaison la moins chère** pour un nombre de trajets donné.
 
 ### Consignes
+
 1. Demandez à l’utilisateur :
 
 ```python
@@ -181,11 +193,11 @@ Prix total : 243.75$
 ```
 
 **Détails de calcul :**  
+
 - 2 × (30 trajets) = 60 trajets → reste 29  
-- 2 × (10 trajets) = 20 trajets → reste 9 
+- 2 × (10 trajets) = 20 trajets → reste 9
 - 9 × (1 trajet) = 9 trajets → reste 0  
 - Coût : 2×75.00 + 2×30.00 + 9×3.75 = **243.75$**
-
 
 > 🎯 Question bonus : Si une sur-couverture (acheter plus de trajets que nécessaire) donne un coût total plus bas, afficher en plus une ligne :
 
@@ -201,6 +213,7 @@ Il existe une combinaison sur-couvrante moins chère : A, B, C : PPP.PP$ (surplu
 ```
 
 ## Fichiers du projet
+
 - README.md – le fichier que vous lisez actuellement, contenant les consignes et informations générales.
 - exo1.py – exercice 01
 - exo2.py – exercice 02
@@ -208,7 +221,6 @@ Il existe une combinaison sur-couvrante moins chère : A, B, C : PPP.PP$ (surplu
 - exo4.py – exercice 04
 - exo5.py – exercice 05
 - test.py – script de tests automatisés pour valider vos solutions (simule des entrées utilisateur et compare les sorties du programme aux résultats attendus). Veillez à créer chacun des fichiers exo1.py à exo5.py et à y écrire votre code conformément aux consignes ci-dessus. Une fois terminé, vous pouvez exécuter test.py pour vérifier automatiquement la conformité de vos programmes.
-
 
 # Directives pour la remise
 
@@ -264,6 +276,7 @@ Le barème de correction est le suivant :
 ---
 
 🎯 **Question bonus** :  
+
 - Vérification d’une combinaison sur-couvrante moins chère  
 - Affichage du message additionnel avec le surplus de trajets  
 *(+1 pt bonus)*  
