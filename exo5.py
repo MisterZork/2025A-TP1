@@ -1,12 +1,6 @@
 # Exercice 05 – Répartition optimale des titres (gabarit)
-# Fait par - Hamza Gharbi
-
-"""
-BONUS (optionnel mais recommandé) :
-- Si une SUR-COUVERTURE (acheter un peu plus de trajets) est moins chère,
-  afficher en plus :
-  "Il existe une combinaison sur-couvrante moins chère : A, B, C : PPP.PP$ (surplus : S trajet(s))"
-"""
+# Fait par - Hamza Gharbi et Yanis Ben Boudaoud
+# Note - Avec bonus
 
 # Étape 1 - Lire n via input (prompt EXACT) et convertir en int
 n = int(input("Entrez le nombre total de trajets à effectuer : "))
@@ -27,13 +21,12 @@ print(f"Prix total - {prix:.2f}$")
 
 # Étape bonus - Trouver une sur-couverture
 """
-Un pack de 30 billets = 2,50$ chaque
-Un pack de 10 billets = 3,00$ chaque
+Un carnet de 30 billets = 2,50$ chaque billet
+Un carnet de 10 billets = 3,00$ chaque billet
 Un billet = 3,75$
-10 billets > 1 billets si ça termine à 9 billets
-30 billets > 10 si c'est à 26-29 billets
+10 billets > 1 billets si n_reste = 9
+30 billets > 10 si c'est entre 26 et 29 billets
 """
-
 surplus = 0
 if n_reste == 9:
     n_reste = 0
@@ -42,7 +35,7 @@ if n_reste == 9:
     surplus += 1
 if r_30 > 25:
     if r_30 != 30:
-        surplus = 30 - r_30
+        surplus = 30 - r_30 # Pour éviter un cas unique où le surplus = 0
     n_reste = 0
     n_10 = 0
     n_30 += 1

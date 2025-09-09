@@ -1,5 +1,5 @@
 # Exercice 04 – Hauteur atteinte par un escalier mécanique (gabarit)
-# Fait par - Hamza Gharbi
+# Fait par - Hamza Gharbi et Yanis Ben Boudaoud
 
 from math import sin, radians
 
@@ -15,4 +15,3 @@ if longueur < 0 or angle < 0 or angle > 90:
 # Étape 3 - Calcul hauteur et affichage
 hauteur = longueur * sin(radians(angle))
 print(f"{hauteur:.2f} m")
-
