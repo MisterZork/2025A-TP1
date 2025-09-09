@@ -25,7 +25,7 @@ Un carnet de 30 billets = 2,50$ chaque billet
 Un carnet de 10 billets = 3,00$ chaque billet
 Un billet = 3,75$
 10 billets > 1 billets si n_reste = 9
-30 billets > 10 si c'est entre 26 et 29 billets
+30 billets > 10 si r_30 est entre 26 et 29 billets
 """
 surplus = 0
 if n_reste == 9:
